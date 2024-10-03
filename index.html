@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- =================icon-link=================-->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+    <!-- =================font-family=================-->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet" />
+    <!-- =================cdn link=================-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- =================slider link=================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- =================root link================= -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        blue: "#458FF6",
+                        grey: "#8F8A99",
+                        black: "#1F1534",
+                    },
+                    fontWeight: {
+                        sm: "300",
+                        md: "400",
+                        lg: "500",
+                        xl: "600",
+                        "2xl": "700",
+                    },
+                    fontSize: {
+                        sm: "16px",
+                        md: "17px",
+                        lg: "18px",
+                        xl: "19px",
+                        "2xl": "21px",
+                        "3xl": "22px",
+                        "4xl": "24px",
+                        "5xl": "26px",
+                        "6xl": "36px",
+                        "7xl": "48px",
+                    },
+                    fontFamily: {
+                        mulish: ["Mulish", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body>
+    <!-- =================sec-1================= -->
+    <section class="items-center min-h-screen justify-center bg-lightOrange relative poppins relative font-mulish">
+        <div class="container w-4/5 mx-auto">
+            <nav class="w-full flex items-center justify-between py-3">
+                <div class="flex gap-3">
+                    <div class="px-3 py-1.05 bg-blue rounded-full font-2xl text-5xl font-mulish text-white">
+                        R
+                    </div>
+                    <div class="font-2xl text-4xl">Radial-Health</div>
+                </div>
+                <ul id="mobile_navbar"
+                    class="flex gap-7 items-center xl:relative fixed max-xl:w-full max-xl:h-full max-xl:bg-orange z-10 max-xl:translate-x-full max-xl:bg-blue left-0 top-0 max-xl:flex-col max-xl:justify-center max-xl:items-center transition ease-out duration-250 max-xl:min-h-screen">
+                    <li>
+                        <a href="#" class="font-md text-lg text-grey hover:text-black">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="font-md text-lg text-grey hover:text-black">Find a doctor</a>
+                    </li>
+                    <li>
+                        <a href="#" class="font-md text-lg text-grey hover:text-black">Apps</a>
+                    </li>
+                    <li>
+                        <a href="#" class="font-md text-lg text-grey hover:text-black">Testimonials</a>
+                    </li>
+                    <li class="font-md text-lg text-grey hover:text-black">
+                        <a href="#">About us</a>
+                    </li>
+                </ul>
+                <div class="relative z-20 flex gap-x-4 xl:hidden">
+                    <div class="relative size-8 rounded-[100px]" id="toggle_button">
+                        <div class="absolute h-full w-full transition-all duration-300 show_nav font-bold text-[30px]">
+                            <ion-icon name="menu-outline"></ion-icon>
+                        </div>
+                        <div
+                            class="absolute h-full w-full font-bold text-[30px] transition-all duration-300 close_nav opacity-0">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-6/12">
+                    <div class="font-2xl text-7xl max-sm:text-6xl text-black max-w-[427px] pt-44 max-xl:pt-0">
+                        Virtual healthcare for you
+                    </div>
+                    <div class="font-sm text-2xl max-w-[493px] text-grey pt-6 pb-11">
+                        Radial-Health provides progressive, and affordable healthcare,
+                        accessible on mobile and online for everyone
+                    </div>
+                    <button class="px-10 py-3 bg-blue rounded-full text-white font-2xl text-lg">
+                        Consult today
+                    </button>
+                </div>
+                <div class="w-full lg:w-6/12">
+                    <img src="./assets/image/madical-chart.png" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="absolute top-20">
+            <img src="./assets/images/dots section-1.png" alt="" />
+        </div>
+    </section>
+    <!-- =================sec-2================= -->
+    <section class="items-center min-h-screen justify-center bg-lightOrange relative poppins relative font-mulish">
+        <div class="container w-4/5 mx-auto relative">
+            <div class="font-2xl text-6xl flex justify-center">Our services</div>
+            <div class="flex justify-center pt-6  relative z-10">
+                <img src="./assets/images/svg/line.svg" alt="" />
+            </div>
+            <p class="font-sm text-lg pt-9 max-w-[952px] text-center flex justify-center mx-auto relative z-10">
+                We provide to you the best choiches for you. Adjust it to your health
+                needs and make sure your undergo treatment with our highly qualified
+                doctors you can consult with us which type of service is suitable for
+                your health
+            </p>
+            <div class="flex flex-wrap">
+                <div class="w-full sm:w-6/12 lg:w-4/12">
+                    <div
+                        class="max-w-[350px] pt-12 pb-11 pl-10 pr-11 shadow-lg rounded-[20px] mt-20 max-xl:mt-9 bg-white relative z-10">
+                        <svg width="92" height="90" viewBox="0 0 92 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_97_1005)">
+                                <path
+                                    d="M56.2158 43.3151L47.1379 51.9802L8.80357 88.5661C7.79717 89.5289 6.50615 90.0103 5.21512 90.0103C3.80211 90.0103 2.3891 89.4367 1.36237 88.2998C-0.660574 86.0669 -0.396269 82.5743 1.93164 80.6692L47.1379 43.8272L52.119 39.7712L56.2158 43.3151Z"
+                                    fill="url(#paint0_linear_97_1005)" />
+                                <path
+                                    d="M46.7414 52.4207L37.8058 60.9424L36.9824 52.1851L41.8721 48.2008L46.7414 52.4207Z"
+                                    fill="#3A81D6" fill-opacity="0.8" />
+                                <path
+                                    d="M91.9782 29.9078C91.9782 46.4288 78.6817 59.8259 62.2948 59.8259C51.9666 59.8259 42.8684 54.5101 37.5518 46.4391C34.431 41.7071 32.6113 36.0225 32.6113 29.9078C32.6113 13.3868 45.9079 0 62.2948 0C69.6953 0 76.4554 2.72448 81.65 7.23114C87.973 12.7211 91.9782 20.8433 91.9782 29.9078Z"
+                                    fill="url(#paint1_linear_97_1005)" />
+                                <path
+                                    d="M62.2946 53.2093C75.0671 53.2093 85.4213 42.7768 85.4213 29.9078C85.4213 17.0387 75.0671 6.60632 62.2946 6.60632C49.5221 6.60632 39.168 17.0387 39.168 29.9078C39.168 42.7768 49.5221 53.2093 62.2946 53.2093Z"
+                                    fill="white" />
+                                <path opacity="0.06"
+                                    d="M91.9782 29.9078C91.9782 46.4288 78.6816 59.8259 62.2947 59.8259C51.9665 59.8259 42.8683 54.5101 37.5518 46.4391C71.027 43.6941 79.8507 15.1178 81.6601 7.23114C87.9729 12.7211 91.9782 20.8433 91.9782 29.9078Z"
+                                    fill="#1A6FB5" fill-opacity="0.5" />
+                                <path
+                                    d="M62.2944 29.959C64.9782 29.959 67.1536 27.7672 67.1536 25.0632C67.1536 22.3592 64.9782 20.1673 62.2944 20.1673C59.6107 20.1673 57.4353 22.3592 57.4353 25.0632C57.4353 27.7672 59.6006 29.959 62.2944 29.959ZM62.2944 32.407C59.0516 32.407 52.5762 34.0458 52.5762 37.3028V38.5319C52.5762 39.2079 53.1251 39.761 53.796 39.761H70.8132C71.4841 39.761 72.0331 39.2079 72.0331 38.5319V37.3028C72.0127 34.056 65.5373 32.407 62.2944 32.407Z"
+                                    fill="url(#paint2_linear_97_1005)" />
+                            </g>
+                            <defs>
+                                <linearGradient id="paint0_linear_97_1005" x1="5.6749" y1="84.3265" x2="53.9246"
+                                    y2="40.7922" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#67C3F3" />
+                                    <stop offset="1" stop-color="#5A98F2" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_97_1005" x1="50.0175" y1="2.11336" x2="72.782"
+                                    y2="52.9053" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#67C3F3" />
+                                    <stop offset="1" stop-color="#5A98F2" />
+                                </linearGradient>
+                                <linearGradient id="paint2_linear_97_1005" x1="55.2685" y1="28.3947" x2="72.9194"
+                                    y2="36.9391" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#B0F4FF" />
+                                    <stop offset="0.071077" stop-color="#A6F1FF" />
+                                    <stop offset="0.2937" stop-color="#8BE8FD" />
+                                    <stop offset="0.5209" stop-color="#78E1FD" />
+                                    <stop offset="0.7536" stop-color="#6DDDFC" />
+                                    <stop offset="1" stop-color="#69DCFC" />
+                                </linearGradient>
+                                <clipPath id="clip0_97_1005">
+                                    <rect width="91.978" height="90" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                        <div class="text-4xl font-2xl text-black pt-5">Search doctor</div>
+                        <p class="font-sm">
+                            Choose your doctor from thousands of specialist, general, and
+                            trusted hospitals
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full sm:w-6/12 lg:w-4/12">
+                    <div
+                        class="max-w-[350px] pt-12 pb-12 pl-10 pr-11 shadow-lg rounded-[20px] mt-20 max-xl:mt-9 bg-white relative z-10">
+                        <svg width="62" height="85" viewBox="0 0 62 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_97_1038)">
+                                <path
+                                    d="M61.8575 26.4806L61.6658 66.2815L61.6339 73.9797C61.6019 80.0968 55.7883 85.0319 48.6331 85L12.8891 84.8403C5.74985 84.7924 -0.0318111 79.8093 0.000131725 73.6762L0.223732 26.1772C0.239703 21.226 4.07285 17.0415 9.31148 15.652L9.32745 13.0966V11.7869L52.8815 11.9946L52.8656 15.8596C58.0882 17.313 61.8735 21.5135 61.8575 26.4806Z"
+                                    fill="url(#paint0_linear_97_1038)" />
+                                <path
+                                    d="M56.1234 1.77283V2.1242L56.0915 6.27678L56.0595 10.3495V10.8446C56.0595 11.6112 55.4207 12.2341 54.654 12.2341H54.3186L52.2104 12.2182L49.8946 12.2022L47.7863 12.1862L45.4705 12.1702L43.3303 12.1383L41.0144 12.1223L38.9062 12.1064L36.5744 12.0904L34.4502 12.0744L32.1343 12.0584L30.0261 12.0265L27.7102 12.0105L25.602 11.9945L23.2702 11.9786L21.146 11.9626L18.8461 11.9466L16.7378 11.9307L14.422 11.9147L12.2978 11.8987L9.98193 11.8828L7.85773 11.8668H7.52233C6.7557 11.8668 6.13281 11.2279 6.13281 10.4613V10.4453V10.0939L6.1967 1.88463V1.38952C6.1967 0.622886 6.83556 0 7.61816 0H7.95356L12.3936 0.0319429L16.8337 0.0638858L18.9579 0.0798572L21.2737 0.0958286L23.382 0.1118L27.8061 0.159714L30.1219 0.175686L32.2301 0.191657L34.546 0.207629L36.6542 0.2236L38.9701 0.239572L41.0783 0.255543L43.3942 0.271514L45.5024 0.287486L47.8502 0.319429L49.9584 0.3354L52.2743 0.351372L54.3985 0.367343H54.7339C55.5165 0.383315 56.1234 1.0062 56.1234 1.77283Z"
+                                    fill="url(#paint1_linear_97_1038)" />
+                                <path
+                                    d="M56.1234 2.14019L56.0915 6.27679L56.0595 10.3495L54.1589 10.3335L51.6354 10.3176L49.3196 10.3016H46.7801L44.4643 10.2856L41.9408 10.2697L39.6249 10.2537H37.0855L34.7696 10.2377L32.2301 10.2217L29.9303 10.2058H27.3908L25.0749 10.1898L22.5355 10.1738L20.2196 10.1579H17.6961L15.3803 10.1419L12.8408 10.1259L10.525 10.1099H8.00147L6.13281 10.094L6.1967 1.88464L10.6368 1.90061L15.4761 1.93256L17.792 1.94853L20.3314 1.9645H22.6473L27.4866 1.99644L30.0261 2.01242H32.3419L34.8814 2.02839L37.1813 2.04436L39.7207 2.06033H42.0366L44.5761 2.0763L46.876 2.09227L49.4154 2.10824H51.7313L54.2707 2.12422L56.1234 2.14019Z"
+                                    fill="url(#paint2_linear_97_1038)" />
+                                <path
+                                    d="M61.8105 34.8841L0.176758 34.5927L0.0475233 61.9198L61.6813 62.2112L61.8105 34.8841Z"
+                                    fill="#F7F9FC" />
+                                <path d="M61.8213 34.884L0.1875 34.5927L0.164244 39.5119L61.798 39.8032L61.8213 34.884Z"
+                                    fill="#FBFCF7" />
+                                <path
+                                    d="M24.2129 45.5803L20.2361 45.5644L20.252 41.5715L14.7738 41.5555L14.7579 45.5324L10.781 45.5165L10.749 50.9787L14.7259 50.9947L14.7099 54.9875L20.1881 55.0035L20.2041 51.0266L24.181 51.0426L24.2129 45.5803Z"
+                                    fill="url(#paint3_linear_97_1038)" />
+                                <path
+                                    d="M51.2364 46.906L31.5276 46.8102C31.0006 46.8102 30.5693 46.379 30.5693 45.8519V45.4047C30.5693 44.8776 31.0006 44.4464 31.5276 44.4464L51.2364 44.5422C51.7634 44.5422 52.1947 44.9735 52.1947 45.5005V45.9477C52.1947 46.4748 51.7634 46.906 51.2364 46.906Z"
+                                    fill="url(#paint4_linear_97_1038)" />
+                                <path opacity="0.5"
+                                    d="M51.2208 52.7675L31.512 52.6716C30.9849 52.6716 30.5537 52.2404 30.5537 51.7133V51.2661C30.5537 50.7391 30.9849 50.3079 31.512 50.3079L51.2208 50.4037C51.7478 50.4037 52.179 50.8349 52.179 51.362V51.8092C52.179 52.3362 51.7478 52.7675 51.2208 52.7675Z"
+                                    fill="url(#paint5_linear_97_1038)" />
+                                <path opacity="0.08"
+                                    d="M6.13281 1.77286V2.12423L6.16475 6.2768L6.1967 10.3335V10.8287C6.1967 11.5953 6.83556 12.2182 7.60218 12.2182H7.93758L10.0618 12.2022L12.3776 12.1862L14.4859 12.1703L16.8017 12.1543L18.91 12.1383L21.2258 12.1223L23.3341 12.1064L25.6499 12.0904L27.7741 12.0744L30.09 12.0585L32.1982 12.0425L34.5141 12.0265L36.6223 12.0105L38.9381 11.9946L41.0624 11.9786L43.3782 11.9626L45.4864 11.9467L47.8023 11.9307L49.9105 11.9147L52.2264 11.8987L54.3506 11.8828H54.686C55.4526 11.8828 56.0755 11.2439 56.0755 10.4773V10.4613V10.1099C31.3677 11.18 7.52233 0.367371 7.52233 0.367371C6.7557 0.383342 6.13281 1.00623 6.13281 1.77286Z"
+                                    fill="#1A6FB5" />
+                            </g>
+                            <defs>
+                                <linearGradient id="paint0_linear_97_1038" x1="0.000131398" y1="11.3333" x2="57.139"
+                                    y2="90.1944" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6CBCFC" />
+                                    <stop offset="1" stop-color="#458DFC" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_97_1038" x1="-629.93" y1="-39.931" x2="-27.6043"
+                                    y2="2.02206" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#B0F4FF" />
+                                    <stop offset="0.0525488" stop-color="#A9F2FF" />
+                                    <stop offset="0.2879" stop-color="#8DE8FE" />
+                                    <stop offset="0.5247" stop-color="#79E1FD" />
+                                    <stop offset="0.7618" stop-color="#6DDDFC" />
+                                    <stop offset="1" stop-color="#69DCFC" />
+                                </linearGradient>
+                                <linearGradient id="paint2_linear_97_1038" x1="6.13971" y1="6.11313" x2="56.1255"
+                                    y2="6.11313" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#B0F4FF" />
+                                    <stop offset="0.0525488" stop-color="#A9F2FF" />
+                                    <stop offset="0.2879" stop-color="#8DE8FE" />
+                                    <stop offset="0.5247" stop-color="#79E1FD" />
+                                    <stop offset="0.7618" stop-color="#6DDDFC" />
+                                    <stop offset="1" stop-color="#69DCFC" />
+                                </linearGradient>
+                                <linearGradient id="paint3_linear_97_1038" x1="21.9782" y1="43.0953" x2="12.5977"
+                                    y2="53.9124" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6CBCFC" />
+                                    <stop offset="1" stop-color="#458DFC" />
+                                </linearGradient>
+                                <linearGradient id="paint4_linear_97_1038" x1="52.3847" y1="45.671" x2="28.8866"
+                                    y2="45.671" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6CBCFC" />
+                                    <stop offset="1" stop-color="#458DFC" />
+                                </linearGradient>
+                                <linearGradient id="paint5_linear_97_1038" x1="30.5522" y1="51.5321" x2="52.1794"
+                                    y2="51.5321" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6CBCFC" />
+                                    <stop offset="1" stop-color="#458DFC" />
+                                </linearGradient>
+                                <clipPath id="clip0_97_1038">
+                                    <rect width="61.8574" height="85" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <div class="text-4xl font-2xl text-black pt-5">
+                            Online pharmacy
+                        </div>
+                        <p class="font-sm">
+                            Buy your medicines with our mobile application with a simple
+                            delivery system
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full sm:w-6/12 lg:w-4/12">
+                    <div
+                        class="max-w-[350px] pt-12 pb-11 pl-10 pr-11 shadow-lg rounded-[20px] mt-20 max-xl:mt-9 bg-white relative z-10">
+                        <svg width="68" height="95" viewBox="0 0 68 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_97_1017)">
+                                <path
+                                    d="M64.9697 0H2.32971C1.04143 0 0 1.02822 0 2.30017V92.7074C0 93.9794 1.04143 95.0076 2.32971 95.0076H64.9697C66.258 95.0076 67.2994 93.9794 67.2994 92.7074V2.30017C67.2917 1.02822 66.2502 0 64.9697 0Z"
+                                    fill="url(#paint0_linear_97_1017)" />
+                                <path
+                                    d="M60.8583 4.09766H6.43401C5.1843 4.09766 4.16602 5.10303 4.16602 6.34451V81.0923C4.16602 82.3338 5.1843 83.3316 6.43401 83.3316H60.8583C62.1157 83.3316 63.1263 82.3262 63.1263 81.0923V6.34451C63.1263 5.10303 62.1157 4.09766 60.8583 4.09766Z"
+                                    fill="white" />
+                                <path
+                                    d="M44.7733 39.636H22.5254C21.5071 39.636 20.6816 38.8211 20.6816 37.8157V15.8422C20.6816 14.8369 21.5071 14.0219 22.5254 14.0219H44.7733C45.7916 14.0219 46.617 14.8369 46.617 15.8422V37.8081C46.617 38.8135 45.7916 39.636 44.7733 39.636Z"
+                                    fill="url(#paint1_linear_97_1017)" />
+                                <path
+                                    d="M33.6498 92.5474C35.5414 92.5474 37.0749 91.0334 37.0749 89.1657C37.0749 87.2981 35.5414 85.7841 33.6498 85.7841C31.7581 85.7841 30.2246 87.2981 30.2246 89.1657C30.2246 91.0334 31.7581 92.5474 33.6498 92.5474Z"
+                                    fill="white" />
+                                <path
+                                    d="M53.0353 51.015H14.2556C13.2759 51.015 12.4736 50.2229 12.4736 49.2556C12.4736 48.2883 13.2759 47.4962 14.2556 47.4962H53.0276C54.0073 47.4962 54.8096 48.2883 54.8096 49.2556C54.8096 50.2229 54.015 51.015 53.0353 51.015Z"
+                                    fill="url(#paint2_linear_97_1017)" />
+                                <path opacity="0.6"
+                                    d="M46.4706 60.7641H13.6077C12.9829 60.7641 12.4814 60.2614 12.4814 59.6521V59.5302C12.4814 58.9133 12.9906 58.4182 13.6077 58.4182H46.4706C47.0954 58.4182 47.5969 58.9209 47.5969 59.5302V59.6521C47.6046 60.2614 47.0954 60.7641 46.4706 60.7641Z"
+                                    fill="url(#paint3_linear_97_1017)" />
+                                <path opacity="0.3"
+                                    d="M40.2142 66.9562H13.4996C12.9365 66.9562 12.4736 66.4992 12.4736 65.9432V65.6081C12.4736 65.0521 12.9365 64.5951 13.4996 64.5951H40.2065C40.7696 64.5951 41.2325 65.0521 41.2325 65.6081V65.9432C41.2325 66.4992 40.7696 66.9562 40.2142 66.9562Z"
+                                    fill="url(#paint4_linear_97_1017)" />
+                                <path opacity="0.6"
+                                    d="M43.5777 72.6914H13.5614C12.9674 72.6914 12.4814 72.2116 12.4814 71.6251V71.4119C12.4814 70.8254 12.9674 70.3456 13.5614 70.3456H43.5777C44.1717 70.3456 44.6577 70.8254 44.6577 71.4119V71.6251C44.6577 72.204 44.1717 72.6914 43.5777 72.6914Z"
+                                    fill="url(#paint5_linear_97_1017)" />
+                                <path
+                                    d="M33.717 26.1208C35.9445 26.1208 37.7502 24.3141 37.7502 22.0854C37.7502 19.8566 35.9445 18.05 33.717 18.05C31.4894 18.05 29.6837 19.8566 29.6837 22.0854C29.6837 24.3141 31.4809 26.1208 33.717 26.1208ZM33.717 28.1385C31.0253 28.1385 25.6504 29.4892 25.6504 32.1739V33.1869C25.6504 33.7441 26.106 34.2 26.6629 34.2H40.7879C41.3447 34.2 41.8004 33.7441 41.8004 33.1869V32.1739C41.7835 29.4977 36.4086 28.1385 33.717 28.1385Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <linearGradient id="paint0_linear_97_1017" x1="4.07698" y1="45.0301" x2="67.3445"
+                                    y2="50.4539" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6CBCFC" />
+                                    <stop offset="1" stop-color="#458DFC" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_97_1017" x1="18.6704" y1="19.2924" x2="48.4651"
+                                    y2="34.6685" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#B0F4FF" />
+                                    <stop offset="0.0856277" stop-color="#A3F0FE" />
+                                    <stop offset="0.2972" stop-color="#8AE7FD" />
+                                    <stop offset="0.5161" stop-color="#77E1FD" />
+                                    <stop offset="0.7451" stop-color="#6DDDFC" />
+                                    <stop offset="1" stop-color="#69DCFC" />
+                                </linearGradient>
+                                <linearGradient id="paint2_linear_97_1017" x1="54.8134" y1="49.257" x2="12.4809"
+                                    y2="49.257" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6CBCFC" />
+                                    <stop offset="1" stop-color="#458DFC" />
+                                </linearGradient>
+                                <linearGradient id="paint3_linear_97_1017" x1="47.6024" y1="59.5878" x2="12.481"
+                                    y2="59.5878" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6CBCFC" />
+                                    <stop offset="1" stop-color="#458DFC" />
+                                </linearGradient>
+                                <linearGradient id="paint4_linear_97_1017" x1="41.2333" y1="65.7799" x2="12.4809"
+                                    y2="65.7799" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6CBCFC" />
+                                    <stop offset="1" stop-color="#458DFC" />
+                                </linearGradient>
+                                <linearGradient id="paint5_linear_97_1017" x1="44.6571" y1="71.5124" x2="12.481"
+                                    y2="71.5124" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6CBCFC" />
+                                    <stop offset="1" stop-color="#458DFC" />
+                                </linearGradient>
+                                <clipPath id="clip0_97_1017">
+                                    <rect width="67.2917" height="95" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                        <div class="text-4xl font-2xl text-black pt-5">Consultation</div>
+                        <p class="font-sm">
+                            Free consultation with our trusted doctors and get the best
+                            recomendations
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap">
+                <div class="w-full sm:w-6/12 lg:w-4/12">
+                    <div
+                        class="max-w-[350px] pt-12 pb-11 pl-10 pr-11 shadow-lg rounded-[20px] mt-9 bg-white relative z-10">
+                        <svg width="68" height="95" viewBox="0 0 68 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_97_1053)">
+                                <path
+                                    d="M67.7107 90.4482C67.7107 92.9272 65.7042 94.942 63.2252 94.942L5.22026 95.0083C3.24697 95.0083 1.57215 93.7398 0.9669 91.9737C0.809368 91.5177 0.726457 91.0368 0.726457 90.5311L0.635254 6.88167C0.635254 4.40261 2.64171 2.38786 5.12077 2.38786L58.3831 2.32982L63.1257 2.32153C65.6047 2.32153 67.6195 4.32799 67.6195 6.80704L67.7107 90.4482Z"
+                                    fill="url(#paint0_linear_97_1053)" />
+                                <path
+                                    d="M61.6994 89.9673L6.73734 90.0254C5.40246 90.0254 4.32461 88.9475 4.32461 87.6126L4.2417 9.76703C4.2417 8.43215 5.31955 7.3543 6.65442 7.3543L61.6082 7.29626C62.9431 7.29626 64.0209 8.37411 64.0209 9.70899L64.1038 87.5546C64.1121 88.8812 63.0343 89.9673 61.6994 89.9673Z"
+                                    fill="white" />
+                                <path
+                                    d="M53.9804 13.7136L13.8927 13.7633C12.5661 13.7633 11.48 12.6855 11.48 11.3589L11.4717 4.67623C11.4717 3.34964 12.5495 2.2635 13.8761 2.2635L53.9721 2.22205C55.2987 2.22205 56.3848 3.2999 56.3848 4.62648L56.3931 11.3091C56.3848 12.6357 55.307 13.7136 53.9804 13.7136ZM13.8761 3.49059C13.2294 3.49059 12.6988 4.02123 12.6988 4.66793L12.7071 11.3506C12.7071 11.9973 13.2377 12.5279 13.8844 12.5279L53.9804 12.4865C54.6271 12.4865 55.1578 11.9559 55.1578 11.3091L55.1495 4.62648C55.1495 3.97977 54.6188 3.44914 53.9721 3.44914L13.8761 3.49059Z"
+                                    fill="url(#paint1_linear_97_1053)" />
+                                <path
+                                    d="M52.8448 5.11564L15.4103 5.1571C14.9957 5.1571 14.6641 4.82545 14.6641 4.41089V0.787659C14.6641 0.373102 14.9957 0.0414557 15.4103 0.0414557L52.8365 0C53.2511 0 53.5827 0.331646 53.5827 0.746203V4.36944C53.591 4.78399 53.2594 5.11564 52.8448 5.11564Z"
+                                    fill="url(#paint2_linear_97_1053)" />
+                                <path
+                                    d="M15.4434 5.15714L52.8116 5.11568C53.2428 5.11568 53.591 4.76746 53.591 4.33632V2.56201L14.6558 2.60347V4.37777C14.6558 4.80891 15.0123 5.15714 15.4434 5.15714Z"
+                                    fill="#58D6F4" />
+                                <path
+                                    d="M28.5763 81.2118L25.3428 61.6447L22.7228 70.1597L15.2276 70.168C14.7715 70.168 14.4067 69.8031 14.4067 69.3471C14.4067 68.8911 14.7715 68.5263 15.2276 68.5263L21.5205 68.518L25.8402 54.4977L29.0738 74.1145L33.2691 60.6414L35.4994 67.0256L40.5239 54.8459L45.4074 74.1643L47.248 68.0205L52.6372 68.0123C53.0932 68.0123 53.4581 68.3771 53.4581 68.8331C53.4581 69.2891 53.0932 69.6539 52.6372 69.6539L48.4668 69.6622L45.2747 80.3163L40.1508 60.0528L35.3668 71.6355L33.352 65.8731L28.5763 81.2118Z"
+                                    fill="#58D6F4" />
+                                <path
+                                    d="M23.0213 43.4871L12.4832 43.4954C10.7835 43.4954 9.39061 42.1107 9.39061 40.411L9.37402 25.6777C9.37402 23.978 10.7586 22.5851 12.4583 22.5851L22.9964 22.5768C24.6961 22.5768 26.089 23.9614 26.089 25.6611L26.1056 40.3945C26.1056 42.0942 24.7209 43.4788 23.0213 43.4871ZM12.45 23.4805C11.2395 23.4805 10.2612 24.4672 10.2612 25.6777L10.2778 40.411C10.2778 41.6216 11.2644 42.5999 12.4749 42.5999L23.013 42.5916C24.2235 42.5916 25.2018 41.605 25.2018 40.3945L25.1853 25.6611C25.1853 24.4506 24.1986 23.4722 22.9881 23.4722L12.45 23.4805Z"
+                                    fill="url(#paint3_linear_97_1053)" />
+                                <path
+                                    d="M17.74 40.6598C22.723 40.6515 24.2734 37.7745 24.2734 37.7745C24.0496 37.4926 23.7677 37.2439 23.3863 36.9951C22.0763 36.1411 21.0233 35.7763 20.5839 35.4115C20.1362 35.055 19.8874 34.5327 19.8874 34.5327L19.6138 34.6985C19.6138 34.6985 19.448 34.1264 19.5392 33.2558C19.5392 33.2558 19.9289 33.1563 20.2191 31.838C20.6834 31.9292 21.2306 30.7519 20.9736 30.3207C20.8077 30.0388 20.6088 30.0637 20.4678 30.1301C20.6088 29.5414 21.2472 26.283 17.7317 26.283C14.2163 26.283 14.8547 29.5414 15.0039 30.1301C14.863 30.0637 14.664 30.0388 14.4982 30.3207C14.2411 30.7519 14.7967 31.9292 15.261 31.838C15.5511 33.1563 15.9491 33.2475 15.9491 33.2475C16.0486 34.1098 15.8745 34.6902 15.8745 34.6902L15.6009 34.5244C15.6009 34.5244 15.3522 35.0384 14.9044 35.4032C14.4567 35.768 13.412 36.1411 12.102 36.9951C11.7206 37.2439 11.4304 37.4926 11.2149 37.7745C11.2066 37.7911 12.7653 40.6681 17.74 40.6598Z"
+                                    fill="url(#paint4_linear_97_1053)" />
+                                <path
+                                    d="M50.5562 27.2779L30.2678 27.3028C29.8864 27.3028 29.5796 26.996 29.5796 26.6146V26.4986C29.5796 26.1172 29.8864 25.8104 30.2678 25.8104L50.5562 25.7855C50.9376 25.7855 51.2444 26.0923 51.2444 26.4737V26.5898C51.2444 26.9712 50.9293 27.2779 50.5562 27.2779Z"
+                                    fill="url(#paint5_linear_97_1053)" />
+                                <path
+                                    d="M43.0942 31.1416L30.2678 31.1582C29.8864 31.1582 29.5796 30.8514 29.5796 30.47V30.3539C29.5796 29.9725 29.8864 29.6658 30.2678 29.6658L43.0942 29.6492C43.4756 29.6492 43.7823 29.9559 43.7823 30.3373V30.4534C43.7823 30.8348 43.4756 31.1416 43.0942 31.1416Z"
+                                    fill="url(#paint6_linear_97_1053)" />
+                                <path opacity="0.6"
+                                    d="M57.5539 35.7348L30.2761 35.768C29.8947 35.768 29.5879 35.4612 29.5879 35.0798V34.9638C29.5879 34.5824 29.8947 34.2756 30.2761 34.2756L57.5539 34.2424C57.9353 34.2424 58.2421 34.5492 58.2421 34.9306V35.0467C58.2338 35.4281 57.927 35.7348 57.5539 35.7348Z"
+                                    fill="url(#paint7_linear_97_1053)" />
+                                <path opacity="0.6"
+                                    d="M56.9654 48.6441L11.4635 48.6939C11.0738 48.6939 10.7505 48.3788 10.7505 47.9808V47.9145C10.7505 47.5248 11.0656 47.2015 11.4635 47.2015L56.9654 47.1517C57.355 47.1517 57.6784 47.4668 57.6784 47.8648V47.9311C57.6784 48.3291 57.355 48.6441 56.9654 48.6441Z"
+                                    fill="url(#paint8_linear_97_1053)" />
+                                <path opacity="0.6"
+                                    d="M57.5539 40.2452L30.2761 40.2784C29.8947 40.2784 29.5879 39.9716 29.5879 39.5902V39.4741C29.5879 39.0927 29.8947 38.786 30.2761 38.786L57.5539 38.7528C57.9353 38.7528 58.2421 39.0596 58.2421 39.441V39.5571C58.2421 39.9384 57.9353 40.2452 57.5539 40.2452Z"
+                                    fill="url(#paint9_linear_97_1053)" />
+                            </g>
+                            <defs>
+                                <linearGradient id="paint0_linear_97_1053" x1="-8.65343" y1="34.748" x2="76.9993"
+                                    y2="62.5782" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6CBCFC" />
+                                    <stop offset="0.1713" stop-color="#5EABFC" />
+                                    <stop offset="0.4084" stop-color="#509AFC" />
+                                    <stop offset="0.6698" stop-color="#4890FC" />
+                                    <stop offset="1" stop-color="#458DFC" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_97_1053" x1="-4.58984" y1="-21.375" x2="56.3866"
+                                    y2="7.98973" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#CFE9FF" />
+                                    <stop offset="1" stop-color="#A1D6FB" />
+                                </linearGradient>
+                                <linearGradient id="paint2_linear_97_1053" x1="14.6546" y1="2.57952" x2="53.5904"
+                                    y2="2.57952" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#B0F4FF" />
+                                    <stop offset="1" stop-color="#69DCFC" />
+                                </linearGradient>
+                                <linearGradient id="paint3_linear_97_1053" x1="14.7701" y1="29.2075" x2="24.5507"
+                                    y2="41.8334" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6CBCFC" />
+                                    <stop offset="1" stop-color="#458DFC" />
+                                </linearGradient>
+                                <linearGradient id="paint4_linear_97_1053" x1="13.7095" y1="30.0293" x2="23.4902"
+                                    y2="42.6553" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#B0F4FF" />
+                                    <stop offset="0.0994384" stop-color="#A1EFFE" />
+                                    <stop offset="0.2994" stop-color="#88E7FD" />
+                                    <stop offset="0.5095" stop-color="#77E1FD" />
+                                    <stop offset="0.7344" stop-color="#6CDDFC" />
+                                    <stop offset="1" stop-color="#69DCFC" />
+                                </linearGradient>
+                                <linearGradient id="paint5_linear_97_1053" x1="29.5807" y1="26.551" x2="51.24"
+                                    y2="26.564" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6CBCFC" />
+                                    <stop offset="1" stop-color="#458DFC" />
+                                </linearGradient>
+                                <linearGradient id="paint6_linear_97_1053" x1="29.5847" y1="30.4037" x2="43.7815"
+                                    y2="30.4037" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6CBCFC" />
+                                    <stop offset="1" stop-color="#458DFC" />
+                                </linearGradient>
+                                <linearGradient id="paint7_linear_97_1053" x1="29.5894" y1="35.0098" x2="58.2375"
+                                    y2="35.0098" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6CBCFC" />
+                                    <stop offset="1" stop-color="#458DFC" />
+                                </linearGradient>
+                                <linearGradient id="paint8_linear_97_1053" x1="10.7501" y1="47.9272" x2="57.6761"
+                                    y2="47.9272" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6CBCFC" />
+                                    <stop offset="1" stop-color="#458DFC" />
+                                </linearGradient>
+                                <linearGradient id="paint9_linear_97_1053" x1="29.594" y1="39.5191" x2="58.2421"
+                                    y2="39.5191" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6CBCFC" />
+                                    <stop offset="1" stop-color="#458DFC" />
+                                </linearGradient>
+                                <clipPath id="clip0_97_1053">
+                                    <rect width="67.0754" height="95" fill="white" transform="translate(0.635254)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                        <div class="text-4xl font-2xl text-black pt-5">Details info</div>
+                        <p class="font-sm">
+                            Free consultation with our trusted doctors and get the best
+                            recomendations
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full sm:w-6/12 lg:w-4/12">
+                    <div
+                        class="max-w-[350px] pt-12 pb-16 pl-10 pr-11 shadow-lg rounded-[20px] mt-9 bg-white relative z-10">
+                        <svg width="80" height="72" viewBox="0 0 80 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_97_1096)">
+                                <path d="M66.4759 14.0107H13.2588V71.1274H66.4759V14.0107Z"
+                                    fill="url(#paint0_linear_97_1096)" />
+                                <path
+                                    d="M13.0386 14.0107C13.1028 14.0107 13.167 14.0383 13.2588 14.0658C13.2588 33.068 13.2588 52.0701 13.2588 71.0998C9.13905 71.421 5.66159 70.3841 2.8998 67.7233C0.945449 65.8332 0.0003863 63.6127 0.0003863 61.0987C0.0003863 52.1986 0.0003863 43.3077 0.0003863 34.4076C0.0003863 31.0127 -0.00878906 27.6178 -0.00878906 24.2229C-0.00878906 20.1215 2.20247 17.1395 6.26716 15.1209C8.35914 14.0933 10.6805 13.9373 13.0386 14.0107Z"
+                                    fill="url(#paint1_linear_97_1096)" />
+                                <path
+                                    d="M57.1813 14.0016C59.5578 14.0016 59.7963 14.0016 62.1636 14.0016C62.1636 33.068 62.1636 52.0701 62.1636 71.109C46.0057 71.109 33.7842 71.109 17.5713 71.109C17.5713 52.0793 17.5713 33.0771 17.5713 14.0199C19.9385 14.0199 20.4524 14.0199 22.8655 14.0199C22.8655 13.7813 22.8655 13.5978 22.8655 13.4235C22.8655 11.3774 22.8747 9.32212 22.8563 7.27601C22.8379 5.84466 23.2233 4.59681 24.3427 3.62422C25.1318 2.94524 26.0401 2.59658 27.0678 2.59658C30.2516 2.5874 33.4263 2.5874 36.6102 2.5874C41.9594 2.5874 47.3178 2.59658 52.6671 2.5874C54.0709 2.5874 55.2362 3.04617 56.1537 4.11051C56.8877 4.96382 57.163 5.96394 57.163 7.08333C57.1538 9.23954 57.163 11.3958 57.163 13.552C57.1538 13.6712 57.163 13.8089 57.1813 14.0016ZM28.6093 14.0016C28.8295 14.0016 28.9946 14.0016 29.1598 14.0016C31.6922 14.0016 34.2338 14.0016 36.7662 14.0016C41.5006 14.0016 46.2443 14.0016 50.9788 14.0107C51.355 14.0107 51.4376 13.8914 51.4376 13.5336C51.4192 11.9279 51.4376 10.3222 51.4376 8.71654C51.4376 8.58809 51.4192 8.45963 51.4009 8.322C43.7853 8.322 36.2156 8.322 28.6093 8.322C28.6093 10.2121 28.6093 12.0656 28.6093 14.0016Z"
+                                    fill="white" />
+                                <mask id="mask0_97_1096" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="17" y="2"
+                                    width="46" height="70">
+                                    <path
+                                        d="M57.1804 14.0016C59.5568 14.0016 59.7953 14.0016 62.1626 14.0016C62.1626 33.068 62.1626 52.0701 62.1626 71.109C46.0048 71.109 33.7832 71.109 17.5703 71.109C17.5703 52.0793 17.5703 33.0771 17.5703 14.0199C19.9376 14.0199 20.4514 14.0199 22.8645 14.0199C22.8645 13.7813 22.8645 13.5978 22.8645 13.4235C22.8645 11.3774 22.8737 9.32212 22.8553 7.27601C22.837 5.84466 23.2223 4.59681 24.3417 3.62422C25.1308 2.94524 26.0392 2.59658 27.0668 2.59658C30.2507 2.5874 33.4253 2.5874 36.6092 2.5874C41.9584 2.5874 47.3168 2.59658 52.6661 2.5874C54.0699 2.5874 55.2352 3.04617 56.1527 4.11051C56.8867 4.96382 57.162 5.96394 57.162 7.08333C57.1528 9.23954 57.162 11.3958 57.162 13.552C57.1528 13.6712 57.162 13.8089 57.1804 14.0016ZM28.6083 14.0016C28.8285 14.0016 28.9936 14.0016 29.1588 14.0016C31.6912 14.0016 34.2328 14.0016 36.7652 14.0016C41.4997 14.0016 46.2433 14.0016 50.9778 14.0107C51.354 14.0107 51.4366 13.8914 51.4366 13.5336C51.4182 11.9279 51.4366 10.3222 51.4366 8.71654C51.4366 8.58809 51.4182 8.45963 51.3999 8.322C43.7843 8.322 36.2147 8.322 28.6083 8.322C28.6083 10.2121 28.6083 12.0656 28.6083 14.0016Z"
+                                        fill="#F7F9FC" />
+                                </mask>
+                                <g mask="url(#mask0_97_1096)">
+                                    <path d="M58.096 0H21V14.02H58.096V0Z" fill="url(#paint2_linear_97_1096)" />
+                                </g>
+                                <path
+                                    d="M80.0005 24.0762C80.0005 20.2959 77.936 17.4791 74.2659 15.433C72.0087 14.176 69.4488 13.9374 66.8246 13.9925C66.4209 14.0016 66.476 14.2127 66.476 14.4329C66.476 21.0391 66.476 27.6362 66.476 34.2425C66.476 45.8493 66.476 57.447 66.4668 69.0538C66.4668 69.7236 66.4668 70.3934 66.4668 71.1183C68.1184 71.1733 69.6873 71.1825 71.2288 70.8155C76.4404 69.586 79.9913 65.7048 79.9913 61.1263C80.0096 48.7854 80.0005 36.4262 80.0005 24.0762Z"
+                                    fill="url(#paint3_linear_97_1096)" />
+                                <path
+                                    d="M44.2165 46.7852C44.2165 47.9688 44.2165 49.0882 44.2165 50.2168C44.2165 51.4921 44.2165 52.7675 44.2165 54.0337C44.2165 54.7953 43.8311 55.199 43.0787 55.199C41.0051 55.2082 38.9315 55.2082 36.8578 55.199C36.1697 55.199 35.7843 54.7677 35.7843 54.0429C35.7843 51.7674 35.7843 49.4919 35.7843 47.2164C35.7843 47.088 35.7843 46.9503 35.7843 46.7852C35.61 46.7852 35.4815 46.7852 35.3439 46.7852C33.1051 46.7852 30.8571 46.7852 28.6184 46.7852C27.7283 46.7852 27.3613 46.4273 27.3613 45.5373C27.3613 43.5646 27.3613 41.5919 27.3613 39.6192C27.3613 38.72 27.7192 38.3622 28.6092 38.3622C30.8388 38.3622 33.0684 38.3622 35.298 38.3622C35.4448 38.3622 35.5825 38.3622 35.7751 38.3622C35.7751 38.2154 35.7751 38.0961 35.7751 37.9768C35.7751 35.7013 35.7751 33.4258 35.7751 31.1504C35.7751 30.3062 36.1513 29.9392 36.9955 29.9392C38.9682 29.9392 40.9409 29.9392 42.9136 29.9392C43.8403 29.9392 44.1981 30.2879 44.1981 31.2329C44.2073 33.4901 44.1981 35.738 44.1981 37.9952C44.1981 38.1053 44.1981 38.2154 44.1981 38.3714C44.3449 38.3714 44.4734 38.3714 44.5927 38.3714C46.8682 38.3714 49.1436 38.3714 51.4191 38.3805C52.2541 38.3805 52.6119 38.7476 52.6119 39.5825C52.6119 41.5644 52.6119 43.5463 52.6119 45.5282C52.6119 46.4365 52.2633 46.7852 51.3733 46.7852C49.1069 46.7852 46.8406 46.7852 44.5835 46.7944C44.4917 46.7852 44.3816 46.7852 44.2165 46.7852Z"
+                                    fill="url(#paint4_linear_97_1096)" />
+                            </g>
+                            <defs>
+                                <linearGradient id="paint0_linear_97_1096" x1="13.2601" y1="42.5656" x2="66.4734"
+                                    y2="42.5656" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#B0F4FF" />
+                                    <stop offset="1" stop-color="#69DCFC" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_97_1096" x1="0.000386301" y1="42.5746" x2="13.2601"
+                                    y2="42.5746" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6CBCFC" />
+                                    <stop offset="1" stop-color="#458DFC" />
+                                </linearGradient>
+                                <linearGradient id="paint2_linear_97_1096" x1="20.9962" y1="7.00849" x2="58.0944"
+                                    y2="7.00849" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6CBCFC" />
+                                    <stop offset="1" stop-color="#458DFC" />
+                                </linearGradient>
+                                <linearGradient id="paint3_linear_97_1096" x1="66.4691" y1="42.569" x2="80.0012"
+                                    y2="42.569" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6CBCFC" />
+                                    <stop offset="1" stop-color="#458DFC" />
+                                </linearGradient>
+                                <linearGradient id="paint4_linear_97_1096" x1="27.367" y1="42.5783" x2="52.6303"
+                                    y2="42.5783" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6CBCFC" />
+                                    <stop offset="1" stop-color="#458DFC" />
+                                </linearGradient>
+                                <clipPath id="clip0_97_1096">
+                                    <rect width="80" height="71.1549" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                        <div class="text-4xl font-2xl text-black pt-5">
+                            Emergency care
+                        </div>
+                        <p class="font-sm">
+                            You can get 24/7 urgent care for yourself or your children and
+                            your lovely family
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full sm:w-6/12 lg:w-4/12">
+                    <div
+                        class="max-w-[350px] pt-12 pb-16 pl-10 pr-11 shadow-lg rounded-[20px] mt-9 bg-white relative z-10">
+                        <svg width="70" height="95" viewBox="0 0 70 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M69.4225 4.31029V90.7055C69.4225 93.0896 67.4963 95.0158 65.1122 95.0158H4.31029C1.92621 95 0 93.0738 0 90.7055V4.31029C0 1.92621 1.92621 0 4.31029 0H65.128C67.4963 0 69.4225 1.92621 69.4225 4.31029Z"
+                                fill="url(#paint0_linear_97_1073)" />
+                            <path
+                                d="M65 7.94666V87.0533C65 89.2363 63.3075 91 61.2126 91H7.78735C5.69252 90.9855 4 89.2218 4 87.0533V7.94666C4 5.76371 5.69252 4 7.78735 4H61.2265C63.3075 4 65 5.76371 65 7.94666Z"
+                                fill="url(#paint1_linear_97_1073)" />
+                            <path
+                                d="M26.872 18.2516V22.183C26.872 22.4672 26.6509 22.6882 26.3667 22.6882H21.5512C21.267 22.6882 21.046 22.9093 21.046 23.1935V28.009C21.046 28.2932 20.8249 28.5142 20.5407 28.5142H16.6094C16.3252 28.5142 16.1042 28.2932 16.1042 28.009V23.1935C16.1042 22.9093 15.8831 22.6882 15.5989 22.6882H10.7992C10.515 22.6882 10.2939 22.4672 10.2939 22.183V18.2516C10.2939 17.9674 10.515 17.7464 10.7992 17.7464H15.6147C15.8989 17.7464 16.1199 17.5254 16.1199 17.2412V12.4256C16.1199 12.1415 16.341 11.9204 16.6252 11.9204H20.5565C20.8407 11.9204 21.0618 12.1415 21.0618 12.4256V17.2412C21.0618 17.5254 21.2828 17.7464 21.567 17.7464H26.3667C26.6509 17.7464 26.872 17.9674 26.872 18.2516Z"
+                                fill="url(#paint2_linear_97_1073)" />
+                            <path opacity="0.5"
+                                d="M58.5756 39.6767H10.8467C10.5309 39.6767 10.2783 39.4241 10.2783 39.1083V37.2926C10.2783 36.9769 10.5309 36.7242 10.8467 36.7242H58.5756C58.8914 36.7242 59.144 36.9769 59.144 37.2926V39.1083C59.1283 39.4241 58.8914 39.6767 58.5756 39.6767Z"
+                                fill="url(#paint3_linear_97_1073)" />
+                            <path
+                                d="M58.5755 17.0517H34.8926C34.5768 17.0517 34.3242 16.7991 34.3242 16.4833V14.6834C34.3242 14.3676 34.5768 14.115 34.8926 14.115H58.5755C58.8913 14.115 59.1439 14.3676 59.1439 14.6834V16.4991C59.1281 16.7991 58.8913 17.0517 58.5755 17.0517Z"
+                                fill="url(#paint4_linear_97_1073)" />
+                            <path opacity="0.5"
+                                d="M51.5654 24.7249H34.8926C34.5768 24.7249 34.3242 24.4723 34.3242 24.1565V22.3408C34.3242 22.0251 34.5768 21.7725 34.8926 21.7725H51.5654C51.8811 21.7725 52.1338 22.0251 52.1338 22.3408V24.1565C52.118 24.4723 51.8811 24.7249 51.5654 24.7249Z"
+                                fill="url(#paint5_linear_97_1073)" />
+                            <path opacity="0.5"
+                                d="M58.5756 48.2973H10.8467C10.5309 48.2973 10.2783 48.0447 10.2783 47.7289V45.9132C10.2783 45.5975 10.5309 45.3448 10.8467 45.3448H58.5756C58.8914 45.3448 59.144 45.5975 59.144 45.9132V47.7289C59.1283 48.0447 58.8914 48.2973 58.5756 48.2973Z"
+                                fill="url(#paint6_linear_97_1073)" />
+                            <path opacity="0.5"
+                                d="M58.5756 56.9179H10.8467C10.5309 56.9179 10.2783 56.6653 10.2783 56.3495V54.5338C10.2783 54.2181 10.5309 53.9655 10.8467 53.9655H58.5756C58.8914 53.9655 59.144 54.2181 59.144 54.5338V56.3653C59.1283 56.6653 58.8914 56.9179 58.5756 56.9179Z"
+                                fill="url(#paint7_linear_97_1073)" />
+                            <path opacity="0.5"
+                                d="M58.5756 65.5543H10.8467C10.5309 65.5543 10.2783 65.3017 10.2783 64.9859V63.1702C10.2783 62.8544 10.5309 62.6018 10.8467 62.6018H58.5756C58.8914 62.6018 59.144 62.8544 59.144 63.1702V64.9859C59.1283 65.3017 58.8914 65.5543 58.5756 65.5543Z"
+                                fill="url(#paint8_linear_97_1073)" />
+                            <path opacity="0.5"
+                                d="M58.5756 74.1749H10.8467C10.5309 74.1749 10.2783 73.9223 10.2783 73.6065V71.7908C10.2783 71.475 10.5309 71.2224 10.8467 71.2224H58.5756C58.8914 71.2224 59.144 71.475 59.144 71.7908V73.6065C59.1283 73.9223 58.8914 74.1749 58.5756 74.1749Z"
+                                fill="url(#paint9_linear_97_1073)" />
+                            <path opacity="0.5"
+                                d="M58.5756 82.7955H10.8467C10.5309 82.7955 10.2783 82.5429 10.2783 82.2271V80.4114C10.2783 80.0956 10.5309 79.843 10.8467 79.843H58.5756C58.8914 79.843 59.144 80.0956 59.144 80.4114V82.2271C59.1283 82.5429 58.8914 82.7955 58.5756 82.7955Z"
+                                fill="url(#paint10_linear_97_1073)" />
+                            <path opacity="0.1"
+                                d="M69.4225 4.31029V90.7055C69.4225 93.0896 67.4963 95.0158 65.1122 95.0158H4.31029C1.92621 95 0 93.0738 0 90.7055V89.2056C37.0874 73.8906 54.3601 15.1571 58.2599 0H65.1122C67.4963 0 69.4225 1.92621 69.4225 4.31029Z"
+                                fill="#1A6FB5" fill-opacity="0.4" />
+                            <defs>
+                                <linearGradient id="paint0_linear_97_1073" x1="95" y1="126" x2="-6" y2="-5.5"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0.3061" stop-color="#5BA7FC" />
+                                    <stop offset="1" stop-color="#69B8FC" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_97_1073" x1="8.6241" y1="7.04564" x2="57.9385"
+                                    y2="78.0313" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0.3061" stop-color="white" />
+                                    <stop offset="1" stop-color="white" />
+                                </linearGradient>
+                                <linearGradient id="paint2_linear_97_1073" x1="9.99979" y1="9.50003" x2="24.9998"
+                                    y2="34" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#B0F4FF" />
+                                    <stop offset="0.368525" stop-color="#80E4FD" />
+                                    <stop offset="1" stop-color="#6CDDFC" />
+                                </linearGradient>
+                                <linearGradient id="paint3_linear_97_1073" x1="10.2905" y1="38.2072" x2="59.1354"
+                                    y2="38.2072" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6CBCFC" />
+                                    <stop offset="1" stop-color="#458DFC" />
+                                </linearGradient>
+                                <linearGradient id="paint4_linear_97_1073" x1="34.3247" y1="15.5844" x2="59.1353"
+                                    y2="15.5844" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6CBCFC" />
+                                    <stop offset="1" stop-color="#458DFC" />
+                                </linearGradient>
+                                <linearGradient id="paint5_linear_97_1073" x1="34.3247" y1="23.2616" x2="52.1254"
+                                    y2="23.2616" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6CBCFC" />
+                                    <stop offset="1" stop-color="#458DFC" />
+                                </linearGradient>
+                                <linearGradient id="paint6_linear_97_1073" x1="10.2905" y1="46.8317" x2="59.1354"
+                                    y2="46.8317" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6CBCFC" />
+                                    <stop offset="1" stop-color="#458DFC" />
+                                </linearGradient>
+                                <linearGradient id="paint7_linear_97_1073" x1="10.2905" y1="55.4562" x2="59.1354"
+                                    y2="55.4562" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6CBCFC" />
+                                    <stop offset="1" stop-color="#458DFC" />
+                                </linearGradient>
+                                <linearGradient id="paint8_linear_97_1073" x1="10.2905" y1="64.0807" x2="59.1354"
+                                    y2="64.0807" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6CBCFC" />
+                                    <stop offset="1" stop-color="#458DFC" />
+                                </linearGradient>
+                                <linearGradient id="paint9_linear_97_1073" x1="10.2905" y1="72.7052" x2="59.1354"
+                                    y2="72.7052" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6CBCFC" />
+                                    <stop offset="1" stop-color="#458DFC" />
+                                </linearGradient>
+                                <linearGradient id="paint10_linear_97_1073" x1="10.2905" y1="81.3297" x2="59.1354"
+                                    y2="81.3297" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6CBCFC" />
+                                    <stop offset="1" stop-color="#458DFC" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                        <div class="text-4xl font-2xl text-black pt-5">Tracking</div>
+                        <p class="font-sm">
+                            Track and save your medical history and health data
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute -right-9 top-[525px]">
+                <img src="./assets/images/dots section-2.png" alt="" />
+            </div>
+            <button
+                class="px-12 py-4 border-2 rounded-full border-blue text-blue font-2xl text-lg flex justify-center mx-auto mt-16 pb-4 mb-10">
+                Learn more
+            </button>
+        </div>
+        <div class="absolute top-0">
+            <img src="./assets/images/full img bg-blue section-2.png" alt="" />
+        </div>
+    </section>
+    <!-- =================sec-3================= -->
+    <section class="items-center min-h-screen justify-center flex bg-lightOrange relative poppins relative font-mulish">
+        <div class="container w-4/5 mx-auto relative">
+            <div class="flex flex-wrap justify-between">
+                <div class="w-full lg:w-6/12">
+                    <img class="full" src="./assets/image/sec3-record-pic.png" alt="" />
+                </div>
+                <div class="w-full lg:w-4/12">
+                    <div class="font-2xl text-6xl">Leading healthcare providers</div>
+                    <div class="py-6">
+                        <img src="./assets/images/svg/line.svg" alt="" />
+                    </div>
+                    <p class="text-grey font-sm text-lg">
+                        Trafalgar provides progressive, and affordable healthcare,
+                        accessible on mobile and online for everyone. To us, it’s not just
+                        work. We take pride in the solutions we deliver
+                    </p>
+                    <button class="px-12 py-4 border-2 rounded-full border-blue text-blue font-2xl text-lg mt-9 mb-5">
+                        Learn more
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =================sec-4================= -->
+    <section class="items-center min-h-screen justify-center flex relative font-mulish">
+        <div class="container w-4/5 mx-auto relative">
+            <div class="flex flex-wrap justify-between">
+                <div class="w-full lg:w-4/12">
+                    <div class="font-2xl text-6xl">Download our mobile apps</div>
+                    <div class="py-6">
+                        <img src="./assets/images/svg/line.svg" alt="" />
+                    </div>
+                    <p class="text-grey font-sm text-lg">
+                        Our dedicated patient engagement app and
+                        <br />web portal allow you to access information instantaneously
+                        (no tedeous form, long calls, <br />
+                        or administrative hassle) and securely
+                    </p>
+                    <button
+                        class="px-12 py-4 border-2 rounded-full border-blue text-blue font-2xl text-lg mt-9 flex items-center">
+                        Download
+                        <span class="pl-4">
+                            <img src="./assets/images/svg/arrow down.svg" alt="" />
+                        </span>
+                    </button>
+                </div>
+                <div class="w-full lg:w-6/12">
+                    <img class="full mt-10" src="./assets/image/sec4-madical-pic.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =================sec-5-slider================= -->
+    <section class="items-center justify-center mulish">
+        <div class="container w-4/5 mx-auto relative bg-gradient-to-b from-[#67C3F3] to-[#5A98F2] rounded-3xl relative">
+            <div class="show-one mt-10">
+                <div class="card">
+                    <div class="flex flex-col">
+                        <div class="font-2xl text-6xl flex justify-center text-white pt-16 pb-6 max-sm:text-center">
+                            What our customer are saying
+                        </div>
+                        <div class="flex justify-center">
+                            <img src="./assets/images/svg/line-2.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center max-lg:flex-col">
+                        <div class="image pr-7 pt-14 pb-16 max-lg:pb-4">
+                            <img src="./assets/images/slider in man image.png" alt="" />
+                        </div>
+                        <div class="font-2xl text-3xl text-white">
+                            Edward Newgate
+                            <p class="font-md text-lg text-white pt-2">Founder Circle</p>
+                        </div>
+                        <div class="max-w-[390px] text-white font-md text-xl ml-28 max-lg:ml-0 max-lg:pt-4 pt-16 pb-20">
+                            “Our dedicated patient engagement app and web portal allow you
+                            to access information instantaneously (no tedeous form, long
+                            calls, or administrative hassle) and securely”
+                        </div>
+                    </div>
+                    <div class="absolute -right-10 -top-3">
+                        <img src="./assets/images/slider dots.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="flex flex-col">
+                        <div class="font-2xl text-6xl flex justify-center text-white pt-16 pb-6 max-sm:text-center">
+                            What our customer are saying
+                        </div>
+                        <div class="flex justify-center">
+                            <img src="./assets/images/svg/line-2.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center max-lg:flex-col">
+                        <div class="image pr-7 pt-14 pb-16 max-lg:pb-4">
+                            <img src="./assets/images/slider in man image.png" alt="" />
+                        </div>
+                        <div class="font-2xl text-3xl text-white">
+                            Edward Newgate
+                            <p class="font-md text-lg text-white pt-2">Founder Circle</p>
+                        </div>
+                        <div class="max-w-[390px] text-white font-md text-xl ml-28 max-lg:ml-0 max-lg:pt-4 pt-16 pb-20">
+                            “Our dedicated patient engagement app and web portal allow you
+                            to access information instantaneously (no tedeous form, long
+                            calls, or administrative hassle) and securely”
+                        </div>
+                    </div>
+                    <div class="absolute -right-10 -top-3">
+                        <img src="./assets/images/slider dots.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="flex flex-col">
+                        <div class="font-2xl text-6xl flex justify-center text-white pt-16 pb-6 max-sm:text-center">
+                            What our customer are saying
+                        </div>
+                        <div class="flex justify-center">
+                            <img src="./assets/images/svg/line-2.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center max-lg:flex-col">
+                        <div class="image pr-7 pt-14 pb-16 max-lg:pb-4">
+                            <img src="./assets/images/slider in man image.png" alt="" />
+                        </div>
+                        <div class="font-2xl text-3xl text-white">
+                            Edward Newgate
+                            <p class="font-md text-lg text-white pt-2">Founder Circle</p>
+                        </div>
+                        <div class="max-w-[390px] text-white font-md text-xl ml-28 max-lg:ml-0 max-lg:pt-4 pt-16 pb-20">
+                            “Our dedicated patient engagement app and web portal allow you
+                            to access information instantaneously (no tedeous form, long
+                            calls, or administrative hassle) and securely”
+                        </div>
+                    </div>
+                    <div class="absolute -right-10 -top-3">
+                        <img src="./assets/images/slider dots.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="flex flex-col">
+                        <div class="font-2xl text-6xl flex justify-center text-white pt-16 pb-6 max-sm:text-center">
+                            What our customer are saying
+                        </div>
+                        <div class="flex justify-center">
+                            <img src="./assets/images/svg/line-2.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center max-lg:flex-col">
+                        <div class="image pr-7 pt-14 pb-16 max-lg:pb-4">
+                            <img src="./assets/images/slider in man image.png" alt="" />
+                        </div>
+                        <div class="font-2xl text-3xl text-white">
+                            Edward Newgate
+                            <p class="font-md text-lg text-white pt-2">Founder Circle</p>
+                        </div>
+                        <div class="max-w-[390px] text-white font-md text-xl ml-28 max-lg:ml-0 max-lg:pt-4 pt-16 pb-20">
+                            “Our dedicated patient engagement app and web portal allow you
+                            to access information instantaneously (no tedeous form, long
+                            calls, or administrative hassle) and securely”
+                        </div>
+                    </div>
+                    <div class="absolute -right-10 -top-3">
+                        <img src="./assets/images/slider dots.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex items-center max-md:hidden">
+                <button
+                    class="circle p-[15px] rounded-full absolute left-[35%]  transition-all duration-400 circle-4 prev -bottom-22">
+                    <svg width="32" height="20" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.4">
+                            <path class="change-svg"
+                                d="M27.6914 8.76265L6.64553 8.76265L11.2693 4.13893C11.907 3.50117 11.907 2.54454 11.2693 1.90678C10.6315 1.26903 9.67487 1.26903 9.03711 1.90678L1.70293 9.24097C1.06517 9.87872 1.06517 10.8354 1.70293 11.4731L9.03711 18.8073C9.67487 19.445 10.6315 19.445 11.2693 18.8073C11.907 18.1695 11.907 17.2129 11.2693 16.5752L6.64553 11.9514L27.6914 11.9514C28.4886 11.9514 29.2858 11.3137 29.2858 10.357C29.2858 9.40041 28.4886 8.76265 27.6914 8.76265Z"
+                                fill="#B5D2FB" />
+                        </g>
+                    </svg>
+                    <style>
+                        .circle:hover .change-svg {
+                            fill: blue;
+                        }
+
+                        .slick-dots li button:before {
+                            content: unset;
+                        }
+
+                        .slick-dots li {
+                            background: #CEE1FB;
+                            border-radius: 30px;
+                            height: 12px;
+                            width: 12px;
+                            position: relative;
+                            bottom: -40px;
+                        }
+
+                        .slick-dots li.slick-active {
+                            background: #5B9BF3;
+                        }
+                    </style>
+                </button>
+                <button
+                    class="circle p-[15px] rounded-full absolute  right-[35%] transition-all duration-400 me-3 circle-3 next -bottom-22">
+                    <svg width="32" height="20" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.4">
+                            <path class="change-svg"
+                                d="M3.73726 11.2373L24.7832 11.2373L20.1595 15.8611C19.5217 16.4988 19.5217 17.4555 20.1595 18.0932C20.7972 18.731 21.7538 18.731 22.3916 18.0932L29.7258 10.759C30.3635 10.1213 30.3635 9.16464 29.7258 8.52689L22.3916 1.1927C21.7538 0.55495 20.7972 0.55495 20.1595 1.1927C19.5217 1.83046 19.5217 2.78709 20.1595 3.42485L24.7832 8.04857L3.73726 8.04857C2.94007 8.04857 2.14287 8.68633 2.14287 9.64296C2.14287 10.5996 2.94007 11.2373 3.73726 11.2373Z"
+                                fill="#B5D2FB" />
+                    </svg>
+                    </g>
+
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- =================sec-6================= -->
+    <section class="items-center min-h-screen flex-col justify-center flex font-mulish">
+        <div class="font-2xl text-6xl flex justify-center pt-20">Check out our latest article</div>
+        <div class="flex justify-center pt-6  relative z-10">
+            <img src="./assets/images/svg/line.svg" alt="" />
+        </div>
+        <div class="w-4/5 mx-auto ">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-6/12 xl:w-4/12">
+                    <div class="max-w-[350px] shadow-lg rounded-[20px] mt-9 bg-white relative z-10">
+                        <img class="rounded-t-[20px] h-[235px] w-full" src="./assets/image/blood-test-pic.png" alt="" />
+                        <div class="pt-6 pb-11 pl-10 pr-11">
+                            <div class="text-2xl font-2xl text-black pt-5">Disease detection, check
+                                up in the laboratory</div>
+                            <p class="font-sm text-md pt-4">
+                                In this case, the role of the health laboratory is very important to do
+                                a disease detection...
+                            </p>
+                            <div class="flex items-center gap-3 pt-4">
+                                <span class="text-blue"> Read more </span>
+                                <svg width="15" height="9" viewBox="0 0 15 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_97_418)">
+                                        <path
+                                            d="M1.37458 5.30357L11.9817 5.30357L9.65137 7.63393C9.32994 7.95536 9.32994 8.4375 9.65137 8.75893C9.9728 9.08036 10.4549 9.08036 10.7764 8.75893L14.4728 5.0625C14.7942 4.74107 14.7942 4.25893 14.4728 3.9375L10.7764 0.241071C10.4549 -0.0803579 9.9728 -0.080358 9.65137 0.241071C9.32994 0.5625 9.32994 1.04464 9.65137 1.36607L11.9817 3.69643L1.37458 3.69643C0.972795 3.69643 0.571009 4.01786 0.571009 4.5C0.571009 4.98214 0.972795 5.30357 1.37458 5.30357Z"
+                                            fill="#4089ED" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_97_418">
+                                            <rect width="14.1429" height="9" fill="white"
+                                                transform="translate(14.7139 9) rotate(-180)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-6/12 xl:w-4/12">
+                    <div class="max-w-[350px] shadow-lg rounded-[20px] mt-9 bg-white relative z-10">
+                        <img class="rounded-t-[20px]" src="./assets/image/microscop-pic.png" alt="" />
+                        <div class="pt-6 pb-11 pl-10 pr-11">
+                            <div class="text-2xl font-2xl text-black pt-5">Herbal medicines that are
+                                safe for consumption</div>
+                            <p class="font-sm text-md pt-4">
+                                Herbal medicine is very widely used at this time because of its very good for your
+                                health...
+                            </p>
+                            <div class="flex items-center gap-3 pt-4">
+                                <span class="text-blue"> Read more </span>
+                                <svg width="15" height="9" viewBox="0 0 15 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_97_418)">
+                                        <path
+                                            d="M1.37458 5.30357L11.9817 5.30357L9.65137 7.63393C9.32994 7.95536 9.32994 8.4375 9.65137 8.75893C9.9728 9.08036 10.4549 9.08036 10.7764 8.75893L14.4728 5.0625C14.7942 4.74107 14.7942 4.25893 14.4728 3.9375L10.7764 0.241071C10.4549 -0.0803579 9.9728 -0.080358 9.65137 0.241071C9.32994 0.5625 9.32994 1.04464 9.65137 1.36607L11.9817 3.69643L1.37458 3.69643C0.972795 3.69643 0.571009 4.01786 0.571009 4.5C0.571009 4.98214 0.972795 5.30357 1.37458 5.30357Z"
+                                            fill="#4089ED" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_97_418">
+                                            <rect width="14.1429" height="9" fill="white"
+                                                transform="translate(14.7139 9) rotate(-180)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-6/12 xl:w-4/12">
+                    <div class="max-w-[350px] shadow-lg rounded-[20px] mt-9 bg-white relative z-10">
+                        <img class="rounded-t-[20px]" src="./assets/image/face-makeup-pic.png" alt="" />
+                        <div class="pt-6 pb-11 pl-10 pr-11">
+                            <div class="text-2xl font-2xl text-black pt-5">Natural care for healthy
+                                facial skin</div>
+                            <p class="font-sm text-md pt-4">
+                                A healthy lifestyle should start from now and also for your skin health.
+                                There are some...
+                            </p>
+                            <div class="flex items-center gap-3 pt-4">
+                                <span class="text-blue"> Read more </span>
+                                <svg width="15" height="9" viewBox="0 0 15 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_97_418)">
+                                        <path
+                                            d="M1.37458 5.30357L11.9817 5.30357L9.65137 7.63393C9.32994 7.95536 9.32994 8.4375 9.65137 8.75893C9.9728 9.08036 10.4549 9.08036 10.7764 8.75893L14.4728 5.0625C14.7942 4.74107 14.7942 4.25893 14.4728 3.9375L10.7764 0.241071C10.4549 -0.0803579 9.9728 -0.080358 9.65137 0.241071C9.32994 0.5625 9.32994 1.04464 9.65137 1.36607L11.9817 3.69643L1.37458 3.69643C0.972795 3.69643 0.571009 4.01786 0.571009 4.5C0.571009 4.98214 0.972795 5.30357 1.37458 5.30357Z"
+                                            fill="#4089ED" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_97_418">
+                                            <rect width="14.1429" height="9" fill="white"
+                                                transform="translate(14.7139 9) rotate(-180)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button
+                class="px-12 py-4 border-2 justify-center flex mx-auto rounded-full border-blue text-blue font-2xl text-lg mt-9 mb-5">
+                View all
+            </button>
+        </div>
+    </section>
+    <!-- =================sec-7================= -->
+    <footer class="items-center justify-center flex relative bg-gradient-to-b from-[#67C3F3] to-[#5A98F2]  font-mulish">
+        <div class="container w-4/5 mx-auton relative">
+            <div class="flex flex-wrap justify-between pb-20 max-2xl:pb-3">
+                <div class="w-full md:w-6/12 lg:w-4/12">
+                    <div class="flex gap-3 pt-[118px] max-2xl:pt-10">
+                        <div class="px-3 py-1.05 bg-white rounded-full font-2xl text-5xl font-mulish">
+                            R
+                        </div>
+                        <div class="font-2xl text-4xl text-white">Radial-Health</div>
+                    </div>
+                    <div class="font-sm text-lg pt-5 text-white">
+                        Radial-Health provides progressive, and affordable healthcare, accessible on mobile and online
+                    </div>
+                    <p class="font-sm text-lg text-white">for everyone</p>
+                    <p class="font-sm text-md text-white">
+                        ©Radial-Health PVT LTD 2021 . All rights reserved
+                    </p>
+                </div>
+                <div class="w-full md:w-6/12 lg:w-2/12">
+                    <ul class="font-sm text-lg text-white">
+                        <li class="font-2xl text-2xl text-white pt-[118px] max-2xl:pt-10">Company</li>
+                        <li class="pt-5">About</li>
+                        <li>Testimonials</li>
+                        <li>Find a doctor</li>
+                        <li>Apps</li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-6/12 lg:w-2/12">
+                    <ul class="font-sm text-lg text-white">
+                        <li class="font-2xl text-2xl text-white pt-[118px] max-2xl:pt-10">Region</li>
+                        <li class="pt-5">India</li>
+                        <li>Singapore</li>
+                        <li>Hongkong</li>
+                        <li>Canada</li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-6/12 lg:w-2/12">
+                    <ul class="font-sm text-lg text-white">
+                        <li class="font-2xl text-2xl text-white pt-[118px] max-2xl:pt-10">Help</li>
+                        <li class="pt-5">Help center</li>
+                        <li>Contact support</li>
+                        <li>Instructions</li>
+                        <li>How it works</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="absolute -top-16 right-0 -z-10">
+                <img src="./assets/images/footer dots img.png" alt="">
+            </div>
+            <div class="absolute -left-[14%] bottom-0 z-10">
+                <img src="./assets/images/footer dots img.png" alt="">
+            </div>
+        </div>
+    </footer>
+</body>
+<!-- =================nav-bar-js================= -->
+<script>
+    const nav = document.getElementById("mobile_navbar");
+    const toggleButton = document.getElementById("toggle_button");
+    const toggleButtonShowNav = document.querySelector(
+        "#toggle_button .show_nav"
+    );
+    const toggleButtonCloseNav = document.querySelector(
+        "#toggle_button .close_nav"
+    );
+    toggleButton.addEventListener("click", function () {
+        nav.classList.toggle("max-xl:translate-x-full");
+        toggleButtonShowNav.classList.toggle("opacity-0");
+        toggleButtonCloseNav.classList.toggle("opacity-0");
+        console.log("nav");
+    });
+</script>
+<!-- =================slider-link================= -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    $(".show-one").slick({
+        dots: true,
+        arrow: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        prevArrow: $(".prev"),
+        nextArrow: $(".next"),
+    });
+</script>
+
+</html>
